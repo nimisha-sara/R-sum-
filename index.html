@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="/Theory DA 1/styles.css">
+    <title>Nimisha</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li style="font-size: 1.5rem; padding-left: 5px;">Nimisha</li>
+            <li style="float: right;">
+                <div class="dropdown">
+                    <button type="button" onclick="myFunction()" class="dropbtn"
+                        style="background-color: transparent; border: 2px solid white; padding: 5px;">Menu <i
+                            class="fa fa-bars icon"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <div class="home" id="home">
+        <div style="font-size: 3rem;">
+            <div id="text"></div>
+            <div id="cursor"></div>
+            <span class="wave">👋</span>
+        </div>
+        <br>
+        <div style="font-size: 2rem; color: #636363;">
+            I'm Nimisha Sara George, <br>a budding programmer/developer.
+            <br><a href="www.google.com" target="_blank" style="font-size: 1rem;">Resume</a>
+        </div>
+        <div style="float: right;" class="image">
+            <img src="ThisIsMe.jpg" alt="" class="rounded-circle">
+        </div>
+        <div style="height: 100%; width: 10px; background-color: #422854; position: fixed; top: 0; left: 0;">
+
+            <div class="social">
+                <ul>
+                    <li><a href="ref"><i class="fa fa-github"></i><b>Github</b></a></li>
+                    <li><a href="ref"><i class="fa fa-medium"></i><b>Medium</b></a></li>
+                    <li><a href="ref"><i class="fa fa-linkedin"></i><b>LinkedIn</b></a></li>
+                    <li><a href="ref"><i class="fa fa-instagram"></i><b>Instagram</b></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <hr id="about">
+        <div class="about" >
+            <h1>About Me</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus error reiciendis expedita
+                illo laudantium eligendi ullam recusandae id accusamus tempore nam ea sapiente, fugiat soluta
+                asperiores velit placeat tenetur distinctio itaque eius et aliquid. Quia nostrum harum, explicabo,
+                officia modi,
+                reprehenderit impedit expedita numquam dolores atque est doloremque suscipit aperiam cupiditate
+                fugiat natus maiores nobis voluptatibus nemo? Eaque, quasi sequi ipsum corrupti similique molestias
+                dignissimos, fuga
+                quas placeat quam explicabo, est voluptas nesciunt obcaecati minus culpa! Molestiae sunt dolorum
+                ea illum nulla earum consequatur aut, illo fugit, quo omnis qui animi, est fugiat culpa doloribus velit
+                deleniti saepe deserunt ipsa officiis labore eligendi maxime molestias! Corrupti ut autem, minima
+                explicabo, voluptate vel dicta tempora deleniti doloremque delectus hic ipsam quas labore, quam
+                praesentium
+                libero! Ab exercitationem dolor necessitatibus, aliquid quasi architecto esse hic reiciendis delectus
+                sit unde accusantium cumque cum dolores, reprehenderit vitae.
+            </p>
+        </div>
+        <hr id="skills">
+        <div class="skills" >
+            <h1>Skills</h1>
+            <i class='fab fa-python'></i>
+            <table>
+                <tr>
+                    <th>Programming</th>
+                    <th>Tools & Technologies</th>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Flask</td>
+                </tr>
+                <tr>
+                    <td>C++</td>
+                    <td>Django</td>
+                </tr>
+                <tr>
+                    <td>Golang</td>
+                    <td>Selenium/Beautiful Soup</td>
+                </tr>
+                <tr>
+                    <td>SQL</td>
+                    <td>Tkinter</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>SparkAR</td>
+                </tr>
+                <tr>
+                    <td>HTML5/CSS3</td>
+                    <td>Vim</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>Git</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>VSCode</td>
+                </tr>
+            </table>
+        </div>
+        <hr id="projects">
+        <div class="projects" >
+            <h1>Projects</h1>
+            <div class="row justify-content-center">
+                <div class="col-4 col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/Theory DA 1/images/vixtxt.jpg" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">VidTxt</h5>
+                            <p class="card-text">A website application that transcrrbes any video or YouTube link to
+                                text and further provides an option to summarize and/or translate the text.</p>
+                            <a href="https://gitlab.com/Anshika_005/nlp-project" target="_blank"
+                                class="btn btn-primary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/Theory DA 1/images/euphoria.jpg" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Euphoria</h5>
+                            <p class="card-text">Application to encourage self-care and mental health with the use of an
+                                annual, coloured mood and stress tracker and daily journaling.</p>
+                            <a href="https://github.com/nimisha-sara/Euphoria" target="_blank"
+                                class="btn btn-primary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/Theory DA 1/images/wallpaper.jpg" alt="wallpaper">
+                        <div class="card-body">
+                            <h5 class="card-title">Wallpaper Quote</h5>
+                            <p class="card-text">Application that displays a randomly generated motivational quote on an
+                                image and sets the resulting image as the
+                                windows desktop wallpaper.</p>
+                            <a href="https://github.com/nimisha-sara/Wallpaper-quote" target="_blank"
+                                class="btn btn-primary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/Theory DA 1/images/innervibe.jpg" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">InnerveVibe</h5>
+                            <p class="card-text">A music/entertainment bot with functions such as play, pause music,
+                                generate teams, start polls, etc.</p>
+                            <a href="https://github.com/nimisha-sara/InnerveVibe" target="_blank"
+                                class="btn btn-primary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/Theory DA 1/images/inventory.jpg" alt="img">
+                        <div class="card-body">
+                            <h5 class="card-title">Product Inventory</h5>
+                            <p class="card-text">A CRUD product database of new products That can also generate
+                                printable shipment bills.</p>
+                            <a href="#" class="btn btn-primary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="contact me" id="contact">
+            <h1>Contact Me</h1>
+            <form action="">
+                <input type="text" name="name" placeholder="Name" id=""> <br>
+                <input type="email" name="email" placeholder="email@example.com" id=""> <br>
+                <textarea name="msg" id="" placeholder="Message"></textarea> <br>
+                <button class="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        © 2022 Nimisha Sara George
+    </footer>
+
+    <script>
+        var _CONTENT = [
+            "Hello There",
+            "Guten Tag",
+            "Konnichiwa",
+            "Bonjour"
+        ];
+
+        var _PART = 0, _PART_INDEX = 0, _INTERVAL_VAL;
+
+        var _ELEMENT = document.querySelector("#text");
+        var _CURSOR = document.querySelector("#cursor");
+
+        function Type() {
+            var text = _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX++;
+            if (text === _CONTENT[_PART]) {
+                _CURSOR.style.display = 'none';
+                clearInterval(_INTERVAL_VAL);
+                setTimeout(function () {
+                    _INTERVAL_VAL = setInterval(Delete, 100);
+                }, 1000);
+            }
+        }
+
+        function Delete() {
+            var text = _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX--;
+            if (text === '') {
+                clearInterval(_INTERVAL_VAL);
+                if (_PART == (_CONTENT.length - 1))
+                    _PART = 0;
+                else
+                    _PART++;
+                _PART_INDEX = 0;
+
+                setTimeout(function () {
+                    _CURSOR.style.display = 'inline-block';
+                    _INTERVAL_VAL = setInterval(Type, 200);
+                }, 200);
+            }
+        }
+        _INTERVAL_VAL = setInterval(Type, 200);
+    </script>
+</body>
+
+</html>
